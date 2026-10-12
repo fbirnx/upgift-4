@@ -7,9 +7,18 @@ body {
 }
 
 img {
+    display: block;
     max-width: 100%;
+    object-fit: cover;
+    font-style: italic;
+    color: grey;
 }
 
+.bildrad{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
 .brand {
     display: flex;
     align-items: center;
@@ -19,6 +28,19 @@ img {
 img.logo {
     border-radius: 8px;
     width: 100px;
+}
+
+.main-img{
+    display: block;
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 3/2;
+    border-radius: 12px;
+}
+
+.main-img:hover{
+    filter: grayscale(100%);
 }
 
 header {
@@ -58,11 +80,6 @@ a.nav-link:active {
     color: darkgoldenrod;
 }
 
-a:focus-visible {
-    outline: 2px solid rgb(218, 218, 123);
-    outline-offset: 2px;
-}
-
 span.company-name {
     color: white;
     font-weight: bold;
@@ -78,6 +95,12 @@ footer {
 }
 
 .help-icon {
+    display: inline;
+    height: auto; 
     width: 1.5em;
     vertical-align: middle;
+}
+
+.youtube-video{
+    border-radius: 12px;
 }
